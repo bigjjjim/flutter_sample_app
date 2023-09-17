@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -41,7 +42,8 @@ class AuthWrapper extends StatelessWidget {
     // get the initial route to be shown to users
     if (!authProvider.isInitialized) {
       return loadingWidget;
-    } else if (authProvider.isFirstTimeUser) {
+      // no onboarding for web
+    } else if (authProvider.isFirstTimeUser && kIsWeb == false) {
       return const OnboardingScreen();
     } else if (!authProvider.isLoggedIn) {
       return const LoginScreen();
