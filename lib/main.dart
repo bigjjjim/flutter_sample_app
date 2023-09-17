@@ -40,9 +40,7 @@ void main() async {
     FlutterError.onError = (FlutterErrorDetails details) {
       FlutterError.dumpErrorToConsole(details);
     };
-    runApp(MultiProvider(providers: [
-      ChangeNotifierProvider(create: (context) => AuthProvider()),
-    ], child: const MyApp()));
+    runApp(const MyApp());
   } else {
     requestPermissionNotif();
     // Set the background messaging handler early on, as a named top-level function
@@ -98,10 +96,7 @@ void main() async {
       );
     }).sendPort);
 
-    runApp(MultiProvider(providers: [
-      ChangeNotifierProvider(create: (context) => AuthProvider()),
-      // ChangeNotifierProvider(create: (context) => UserProvider()),
-    ], child: const MyApp()));
+    runApp(const MyApp());
   }
 }
 
