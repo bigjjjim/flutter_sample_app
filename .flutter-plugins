@@ -1,0 +1,25 @@
+# This is a generated file; do not edit or check into version control.
+firebase_analytics=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_analytics-10.4.5/
+firebase_analytics_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_analytics_web-0.5.4+5/
+firebase_auth=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_auth-4.9.0/
+firebase_auth_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.0/
+firebase_core=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_core-2.15.1/
+firebase_core_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_core_web-2.7.0/
+firebase_crashlytics=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_crashlytics-3.3.5/
+firebase_messaging=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_messaging-14.6.7/
+firebase_messaging_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/firebase_messaging_web-3.5.6/
+flutter_local_notifications=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/flutter_local_notifications-15.1.1/
+google_sign_in=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/google_sign_in-6.1.5/
+google_sign_in_android=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.19/
+google_sign_in_ios=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/google_sign_in_ios-5.6.3/
+google_sign_in_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/google_sign_in_web-0.12.0+5/
+path_provider_linux=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
+shared_preferences=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences-2.2.1/
+shared_preferences_android=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.1/
+shared_preferences_foundation=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.4/
+shared_preferences_linux=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.3.1/
+shared_preferences_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.1/
+shared_preferences_windows=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.3.1/
+sign_in_with_apple=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/sign_in_with_apple-5.0.0/
+sign_in_with_apple_web=/Users/jeremiehouet/.pub-cache/hosted/pub.dev/sign_in_with_apple_web-1.0.1/

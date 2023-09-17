@@ -41,17 +41,11 @@ class LoginScreen extends StatelessWidget {
                           CustomLoginButton(
                             imagePath: "assets/login/googleIcon.png",
                             label: labelGoogleSignIn,
-                            onPressed: () async {
-                              //differentiate login for web or mobile
-                              kIsWeb
-                                  ? await handleGoogleSignInWeb(
-                                      context,
-                                      authProvider,
-                                    )
-                                  : await handleGoogleSignIn(
-                                      context,
-                                      authProvider,
-                                    );
+                            onPressed: () {
+                              handleGoogleSignIn(
+                                context,
+                                authProvider,
+                              );
                             },
                           ),
                           v16px,
@@ -62,8 +56,8 @@ class LoginScreen extends StatelessWidget {
                               : CustomLoginButton(
                                   imagePath: "assets/login/apple-logo.png",
                                   label: labelAppleSignIn,
-                                  onPressed: () async {
-                                    await handleAppleSignIn(
+                                  onPressed: () {
+                                    handleAppleSignIn(
                                       context,
                                       authProvider,
                                     );

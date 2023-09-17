@@ -10,31 +10,14 @@ Future<void> handleGoogleSignIn(
 ) async {
   final scaffoldMessenger = ScaffoldMessenger.of(context);
   try {
-    await authProvider.signInWithGoogle().then((e) {
-      if (authProvider.isLoggedIn) {
-        Navigator.pushReplacementNamed(context, '/');
-      }
-    });
-  } catch (error) {
-    // Display error message to user
-    scaffoldMessenger.showSnackBar(
-      const SnackBar(content: Text(errorGoogle)),
-    );
-  }
-}
-
-// google sign in and redirecting on web
-Future<void> handleGoogleSignInWeb(
-  BuildContext context,
-  AuthProvider authProvider,
-) async {
-  final scaffoldMessenger = ScaffoldMessenger.of(context);
-  try {
-    await authProvider.signInWithGoogle().then((e) {
-      if (authProvider.isLoggedIn) {
-        Navigator.pushReplacementNamed(context, '/');
-      }
-    });
+    await authProvider.signInWithGoogle();
+    if (authProvider.isLoggedIn) {
+      if (context.mounted) Navigator.pushReplacementNamed(context, '/');
+    } else {
+      scaffoldMessenger.showSnackBar(
+        const SnackBar(content: Text('Failed to login with Google.')),
+      );
+    }
   } catch (error) {
     // Display error message to user
     scaffoldMessenger.showSnackBar(
@@ -48,11 +31,10 @@ Future<void> handleAppleSignIn(
     BuildContext context, AuthProvider authProvider) async {
   final scaffoldMessenger = ScaffoldMessenger.of(context);
   try {
-    await authProvider.signInWithApple().then((e) {
-      if (authProvider.isLoggedIn) {
-        Navigator.pushReplacementNamed(context, '/');
-      }
-    });
+    await authProvider.signInWithApple();
+    if (authProvider.isLoggedIn) {
+      if (context.mounted) Navigator.pushReplacementNamed(context, '/');
+    }
   } catch (error) {
     // Display error message to user
     scaffoldMessenger.showSnackBar(
